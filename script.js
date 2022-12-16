@@ -7,7 +7,7 @@ let chances = (document.querySelector(".chances").innerText = 5);
 
 //Creating the randomized number
 number = Math.round(Math.random() * 9 + 1);
-console.log(number);
+
 
 //Reload the page when button is clicked
 const refresh = () => {
