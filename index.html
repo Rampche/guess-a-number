@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/41892927c1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Guess My Number</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="page-margin">
+      <header class="header">
+        <h1>Guess a Number!</h1>
+      </header>
+
+      <div class="div-border">
+        <p>(Between 1 and 10)</p>
+      </div>
+
+      <section class="game-content">
+        <div class="box-with-a-number">?</div>
+      </section>
+
+      <section class="game-interaction">
+        <div class="left">
+          <input
+            id="number"
+            type="number"
+            max="10"
+            min="1"
+            required
+            class="number-to-check"
+            autocomplete="off"
+          />
+          <br />
+          <button class="check">Check!</button>
+        </div>
+
+        <div class="right">
+          <p class="message">Start guessing...</p>
+          <div class="chances-count wrapper">
+            <i class="fa-solid fa-fire"></i>
+            <p>Chances:</p>
+            <p class="chances"></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <button class="btn-again">Do it again!</button>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #eee;
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  background: #222;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  background: #eee;
+  color: #222;
+  border: none;
+  font-family: "Press Start 2P", sans serif;
+  font-size: 20px;
+  width: 180px;
+  height: 65px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+main {
+  padding: 20px 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.game-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  padding: 30px;
+}
+
+.div-border {
+  border-bottom: 4px solid #eee;
+  padding: 40px;
+  margin: 0px -20px;
+  display: flex;
+  justify-content: center;
+}
+
+.div-border p {
+  margin-bottom: 35px;
+}
+
+.box-with-a-number {
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: #eee;
+  color: #222;
+  font-size: 2.5rem;
+}
+
+.game-interaction {
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  color: #eee;
+}
+
+.number-to-check {
+  margin: 30px 15px;
+  background: #222;
+  color: #eee;
+  border: 3px solid #eee;
+  height: 90px;
+  width: 250px;
+  text-align: center;
+  font-family: "Press Start 2P", sans serif;
+  font-size: 2.5rem;
+}
+
+.message {
+  width: 90%;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.chances-count {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin-top: 30px;
+}
+
+.chances-count * {
+  margin-left: 2%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-again {
+  width: 20%;
+}
+
+/* Responsivity at 360px*/
+/* @media (max-width: 360px) {
+  h1 {
+    width: 100%;
+    font-size: 5px;
+  }
+} */
+
+/* Responsivity from 360px to 640px*/
+@media (max-width: 640px) {
+  h1 {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .div-border p {
+    font-size: 14px;
+  }
+
+  .game-interaction * {
+    width: 90%;
+  }
+
+  .game-interaction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chances-count {
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .chances-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  footer {
+    margin-top: 15px;
+  }
+
+  .btn-again {
+    width: 80%;
+  }
+}
+
+@media (min-width: 641px) {
+  .btn-again {
+    width: 265px;
+  }
+}
